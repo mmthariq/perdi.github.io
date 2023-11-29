@@ -1,0 +1,239 @@
+/* .banner{
+    height: 80vh;
+    background-color: blanchedalmond;
+    background-size: cover;
+    background-position: center;
+  } */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+  @keyframes moveText {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(30px); }
+    100% { transform: translateX(0); }
+}
+
+.animated-text {
+    animation: moveText 3s ease-in-out infinite;
+}
+
+:root{
+    --primaryColor: #FFB5B8;
+    --secondaryColor: #76FDFF;
+    --purple:#814096;
+    --pink:#ffff;
+    --firstGradient: linear-gradient(90deg, var(--secondaryColor),var(--primaryColor));
+    --gradient:linear-gradient(90deg, var(--purple), var(--pink));
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background:var(--purple);
+    color: #CDCDCD;
+}
+
+.nav-link {
+  font-size: medium;
+}
+
+.navbar-brand {
+  font-size: medium;
+  white-space: nowrap;
+}
+
+html{
+    font-size: 80.5%;
+    overflow-x: hidden;
+    margin-top: 0px;
+}
+
+body{
+    background:#ffc7f8;
+}
+
+section{
+    min-height: 100vh;
+    padding:0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+.landingPage{
+  margin-top: -50px;
+  background: rgb(235, 253, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+.landingPage .image img{
+  width:40vw;
+  
+}
+
+@keyframes float{
+  0%, 100%{
+      transform: translateY(0rem);
+  }
+  50%{
+      transform: translateY(-3.5rem);
+  }
+}
+
+.landingPage .content h3{
+  font-size: 5.5rem;
+  color:#333;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.landingPage .content h3 span{
+  color:var(--pink);
+  text-transform: uppercase;
+}
+
+.landingPage .content p{
+  font-size: 1em;
+  color:#666;
+  padding:1rem 0;
+}
+
+@media (max-width:1200px){
+  
+  html{
+      font-size: 55%;
+  }
+
+}
+
+@media (max-width:991px){
+  
+  section{
+      padding:0 3%;
+      padding-top: 7.5rem;
+      padding-bottom: 2rem;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .landingPage{
+      flex-flow: column-reverse;
+  }
+
+  .landingPage .image img{
+      width:100%;
+  }
+
+  .landingPage .content h3{
+      font-size: 3.6rem;
+  }
+
+  .landingPage .content p{
+      font-size: 1.5rem;
+  }
+  .listBook{
+      flex-flow: column-reverse;
+  }
+
+}
+  .landingPage{
+    margin-top: -80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(Cover.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@keyframes fade{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.card{
+    align-items: center;
+    border: 20px;
+    background-color: #ffc7f8;
+    margin: auto;
+    
+}
+.card1 {
+    border: brown;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 30px;
+      }
+      
+      .rounded-circle {
+        width: 60px;
+      }
+      
+      .breadcrumb-item a {
+        text-decoration: none;
+      }
+      
+.card2{
+  
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.date{
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.detaile{
+  margin-left: auto;
+}
+
+
+.cat{
+    align-items: right;
+}
+.far{
+  color: #76FDFF;
+}
+.btn{
+  text-align: center;
+  border-radius: 50px;
+  justify-content: center;
+}
+
+.col-12.col-md-3.mt-5 a i {
+  font-size: 30px; 
+}
+
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  bottom: 20px; /* Ubah nilai ini sesuai keinginan Anda */
+  transform: translateX(-50%);
+  font-size: 24px; /* Ubah ukuran ikon sesuai keinginan Anda */
+  animation: moveDown 0.5s infinite alternate; /* Animasi bergerak ke bawah selama 1 detik, berulang tanpa henti */
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    transform: translateX(-50%) translateY(10px); /* Ubah nilai translateY untuk jarak pergerakan ke bawah */
+  }
+}
+
